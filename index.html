@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Deep Learning with MNIST dataset</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0"></script>
+        <script>
+            
+            async function predict () { 
+                const img = document.getElementById("img");
+                const resultado_predicao = document.getElementById("resultado_predicao");
+
+                console.log(img)
+                // // convert image data in tensor 
+                let tensorImage = tf.browser.fromPixels(img);
+                const resized = tf.image.resizeBilinear(tensorImage, [28, 28]).toFloat();
+
+                reshaped = resized.slice([0,0,0], [28, 28, 1])
+
+                console.log(await "Shape: ", reshaped.array);
+                
+                // const offset = tf.scalar(255.0);
+
+                reshaped = tf.reshape(reshaped, [1, 28, 28, 1])
+
+                const model = await tf.loadLayersModel("./model/model.json");
+
+                resultado_predicao.innerText= (await model.predict(reshaped).print());
+            }
+            
+            // const img = document.getElementById("img")
+            // let tensorImage = tf.browser.fromPixels(img);
+            // const resized = tf.image.resizeBilinear(tensor, [28, 28]).toFloat();
+            // const offset = tf.scalar(255.0);
+
+            // console.log(model.predict(resized)).dataSync();
+        </script>
+    </head>
+    <body>
+        <h1>Predição de números</h1>
+        <img id="img" src="./">
+        <p id="resultado_predicao"></p>
+        <!-- <input type="file" id="upload-json"> -->
+        <input type="button" onclick="predict()" value="Predizer">
+        
+    </body>
+</html>
