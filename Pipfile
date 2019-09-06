@@ -11,6 +11,7 @@ keras="*"
 numpy="*"
 matplotlib="*"
 jupyter="*"
+tensorflowjs="*"
 
 [requires]
 python_version = "3.7"
