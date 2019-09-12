@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="./revealjs/css/reveal.css">
+    <link rel="stylesheet" href="./revealjs/css/theme/simple.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./highlight/styles/vs2015.css">
+
+    <script src="./revealjs/js/reveal.js"></script>
+    <script src="./highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <style media="screen">
+      .title {
+        color: #dbdbdb !important;
+        font-size: 100pt !important;
+        text-align: justify !important;
+      }
+
+      .suptitle{
+        text-align: justify !important;
+        color:rgba(255, 255, 255, 0.747);
+      }
+    
+      .subtitle {
+        padding-left: 15px !important;
+        color:rgba(255, 255, 255, 0.747);
+        text-align: justify !important;
+      }
+
+      .subtitle-right {
+        position: absolute !important;
+        right: 0px !important; 
+      }
+
+      
+      .text-right {
+        text-align: end !important;
+      }
+
+      .url {
+        color: #d3cfcfa2 !important;
+        font-size: 70% !important;
+        text-align: justify !important;
+      }
+    
+      .panel {
+        background-color: rgb(228, 228, 237);
+        padding: 40px !important;
+        font-size: 20pt !important;
+        border-radius: 10px;
+      }
+    
+      .style-image {
+        border-style: none !important;
+        box-shadow: none !important;
+        background-color: transparent !important;
+      }
+    
+      .effect-panel {
+        box-shadow: 5px 10px 20px rgb(32, 32, 31) !important;
+      }
+    
+      .img {
+        display: inline-block !important;
+        width: 150px !important;
+      }
+
+      .img-header{
+        position: fixed !important; 
+        top: 0px !important; 
+        right: 0px !important; 
+      }
+
+    </style>
+    
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <img class="img-header" src="./images/LICA.png" width="200">
+
+        <section>
+
+          <section data-background="./images/background-slide2.png">
+            <h4 class="suptitle">Na prática</h4>
+            <h1 class="title">Deep Learning</h1>
+          </section>
+          <section>
+            <table style="color:rgb(29, 35, 38); font-size:20pt;">
+              <tr>
+                <td>
+                  <div class="panel">
+                    <p><span class="icons">&#xf2b9; </span> Luís Eduardo G. França</p>
+                    <p><span class="icons">&#xf19d; </span>Universidade Federal de Alagoas</p>
+                    <p><span class="icons">&#xf0e0; </span>luiseduardogfranca@gmail.com</p>
+                    <p><span class="icons">&#xf09b; </span> <a href="https://www.github.com/luiseduardogfranca">
+                        luiseduardogfranca</a></p>
+                    <p><span class="icons">&#xf099; </span> <a href="https://twitter.com/LEduardoGF">@LEduardoGF</a></p>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </section>
+        </section>
+
+        <section data-background="white">
+          <div style="color:#26242e;">
+            <p style="text-align: justify">Encontre-nos no LICA ou no Medium!</p>
+            <ul class="bit-list">
+              <li>
+                <span>Medium: <a
+                    href="https://medium.com/lica-ufal">http://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29l</a></span>
+              </li>
+              <li>
+                <span>Github: <a href="https://github.com/LICA-UFAL">https://github.com/LICA-UFAL</a></span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <figure style="text-align: center;">
+              <img class="style-image" src="./images/medium.gif" alt="Nodule pulmonary" width="1200">
+            </figure>
+          </div>
+        </section>
+
+        <section>
+          <section>
+            <h2>Uma breve introdução</h2>
+          </section>
+          <section>
+            <div class="text-justify">
+              <p>
+                "Ciência de dados é uma área interdisciplinar voltada para o estudo e a análise de dados, estruturados ou não, que visa a extração de conhecimento ou insights para possíveis tomadas de decisão, de maneira similar à mineração de dados."
+              </p>
+              <p class="subtitle subtitle-right"><i>- Wikipédia</i></p>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>O que podemos fazer com Deep Learning?</h2>
+          </section>
+
+          <section>
+            <p class="title-topic" >Aplicações</p>
+            <div class="text-justify">
+              <p class="fragment fade-up"> <span class="icons"></span> Images;</p>
+              <p class="fragment fade-up"> <span class="icons"></span> Vídeos;</p>
+              <p class="fragment fade-up"> <span class="icons"></span> Dados médicos;</p>
+              <p class="fragment fade-up"> <span class="icons"></span> Reconhecimento de voz</p>
+            </div>
+          </section>
+          <section>
+            <p class="title-topic">Aplicações</p>
+            <div class="text-justify">
+              <p class="fragment fade-up"> <span class="icons"></span> Dados bancários e área financeira;</p>
+              <p class="fragment fade-up"> <span class="icons"></span> Sistemas de recomendação;</p>
+              <p class="fragment fade-up"> <span class="icons"></span> Detecção de anamolia e fraude;</p>
+              <p class="fragment fade-up"> <span class="icons"></span> Mapeamento e trânsito;</p>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Porque Python?!</h2>
+          </section>
+          <section data-background="white">
+            <img src="./images/numpy.png" width=700>
+          </section>
+          <section data-background="white">
+            <img src="./images/pandas.png" width=700>
+          </section>
+          <section data-background="white">
+            <img src="./images/plt.png" width=600>
+          </section>
+          <section data-background="white">
+            <img src="./images/scikit-learn.png" width=550>
+          </section>
+          <section data-background="white">
+            <img src="./images/tensorflow.png" width=700>
+          </section>
+          <section data-background="white">
+            <img src="./images/keras.png" width=600>
+          </section>
+        </section>
+
+        <section data-background="white">
+          <section >
+            <h2 style="color:#26242e">Deep Learning</h2>
+          </section>
+          <section>
+            <p class="title-topic">Deep Learning</p>
+            <figure style="text-align: center;">
+              <img class="style-image" src="./images/deep-learning.png" alt="Nodule pulmonary" width="1200">
+            </figure>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Mãos à obra!</h2>
+          </section>
+          <section>
+            <p style="text-align: justify">Notebook:</p>
+            <p ><a class="url" href="https://colab.research.google.com/drive/16PpvlkRGzV4kqjuA9IeHbtdFLCEAv4Tu">http://abre.ai/cliqueneu</a></p>
+          </section>
+        </section>
+
+
+        <!-- <section>
+          <section>
+            <h2>API com (<i>Flask</i>)</h2>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>TypeScript == JavaScript ?</h3>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Angular + Web App</h2>
+          </section>
+        </section> -->
+      </div>
+    </div>
+
+    <script src="./revealjs/lib/js/head.min.js">
+
+    </script>
+    <script type="text/javascript">
+      Reveal.initialize({
+        controls:true,
+        progress:true,
+        center: true,
+        transistion: 'slide'
+      })
+    </script>
+
+  </body>
+
+</html>
